@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+// import EllipseCanvas from "@/components/Canvas/canvas";
 
 export default function Home() {
   return (
@@ -23,6 +24,8 @@ export default function Home() {
             className="object-cover z-[-10]"
           />
         </div>
+        <div className="glow-effect right-0 top-2"></div>
+        {/* <EllipseCanvas /> */}
         <h1 className="text-7xl neueMachina font-bold z-10">
           Trusted Multi-Chain
           <br /> DEX Platform

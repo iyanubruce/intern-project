@@ -16,6 +16,7 @@ const Navbar = () => {
         alt="logo"
         className="object-cover"
       />
+      <div className="glow-effect top-0 left-0"></div>
       <button className="lg:hidden block" onClick={() => setIsOpen(true)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
