@@ -13,17 +13,17 @@ export default function Home() {
     <div>
       <Navbar />
       {/* Hero section */}
-      <div className="w-[85%] max-w-[1500px] pt-[200px] mx-auto m-0 relative">
+      <div className="w-[85%] max-w-[1500px] pt-[200px] mx-auto m-0 relative z-0">
         {/* Yellow Ball */}
         <div className="absolute top-[80px] right-0 w-[300px] h-[300px] ">
           <Image
             src="/images/Circle.png"
             alt="yellow ball"
             fill
-            className="object-cover"
+            className="object-cover z-[-10]"
           />
         </div>
-        <h1 className="text-7xl neueMachina font-bold">
+        <h1 className="text-7xl neueMachina font-bold z-10">
           Trusted Multi-Chain
           <br /> DEX Platform
         </h1>
@@ -45,7 +45,7 @@ export default function Home() {
         </h1>
         <div className="glass-background">
           <div className="grid grid-cols-12 grid-rows-5 neueMachina">
-            <div className="col-span-4 neueMachina text-3xl text-[#e4b40d] border-r border-b border-slate-400/25 text-center font-bold grid place-content-center">
+            <div className="col-span-4 neueMachina lg:text-3xl text-base text-[#e4b40d] border-r border-b border-slate-400/25 text-center font-bold grid place-content-center">
               Comparison
             </div>
             <div className="col-span-4 text-center grid place-content-center border-b border-slate-400/25">
@@ -169,7 +169,7 @@ export default function Home() {
         <h1 className="neueMachina text-3xl font-bold text-center">
           Our <span className="text-[#e4b40d]">Features</span>
         </h1>
-        <div className="grid mt-7 grid-cols-4 gap-[40px] auto-rows-auto">
+        <div className="grid mt-7 grid-cols-1 lg:grid-cols-4 gap-[40px] auto-rows-auto">
           <div className="rounded glass-background2 grid">
             <div className="mb-[40px]">
               <div className="p-5 glass-background3 w-max rounded-[50%]">
@@ -315,14 +315,14 @@ export default function Home() {
         </div>
       </div>
       {/* Footer */}
-      <div className="bg-[#051422] flex px-10 justify-between py-[100px] items-center raleway font-bold">
+      <div className="bg-[#051422] flex flex-col lg:flex-row px-10 justify-between py-[100px] items-center raleway font-bold">
         <Image
           src="/images/Logo-2.png"
           width={90}
           height={30}
           alt="askdj"
         ></Image>
-        <div className="flex gap-16">
+        <div className="flex lg:gap-16 gap-5">
           <span>About</span> <span>Roadmap</span> <span>Faqs</span>{" "}
           <span>Contact Us</span>
         </div>
